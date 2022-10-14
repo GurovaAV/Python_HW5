@@ -2,10 +2,9 @@
 
 path = 'task1_text.txt'
 data = open (path, 'r', encoding = 'utf-8')
-text = None
+text = ""
 for line in data:
     text = line
-    print(text)
 data.close
 
 text_spltd = text.split()
