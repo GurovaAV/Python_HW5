@@ -1,0 +1,15 @@
+# Напишите программу, удаляющую из текста все слова, содержащие "абв"
+
+path = 'task1_text.txt'
+data = open (path, 'r', encoding = 'utf-8')
+text = None
+for line in data:
+    text = line
+    print(text)
+data.close
+
+text_spltd = text.split()
+findme = 'абв'
+
+with open ('text1_out.txt', 'w', encoding = 'utf-8') as f:
+    f.write(str(' '.join(list(filter(lambda word: findme not in word, text_spltd)))))
