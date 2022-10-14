@@ -11,5 +11,5 @@ data.close
 text_spltd = text.split()
 findme = 'абв'
 
-with open ('text1_out.txt', 'w', encoding = 'utf-8') as f:
+with open ('task1_out.txt', 'w', encoding = 'utf-8') as f:
     f.write(str(' '.join(list(filter(lambda word: findme not in word, text_spltd)))))
